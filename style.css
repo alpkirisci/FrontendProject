@@ -1,0 +1,333 @@
+
+
+html{
+    height:100%;
+}
+
+body{
+    padding:0;
+    margin:0;
+    width:100%;
+    height:100%;
+    display: flex;
+}
+
+#left {
+    background-color: ghostwhite;
+    width: 35%;
+    min-width:175px;
+    height:100%;
+}
+
+#main {
+    width: 65%;
+    min-width:325px;
+    height:100%;
+}
+
+.mainMembersChosen{
+    background-color:lightpink;
+    background-image:none;
+}
+
+.listChosen{
+    background-image: linear-gradient(rgb(130, 132, 248),rgb(171, 111, 250));
+}
+
+.listChosen h3{
+    font-family:"Roboto";
+    font-size:28px;
+    font-weight: 500;
+    color:white;
+    margin-left:10%;
+    margin-top:5%;
+    margin-bottom:5%;
+}
+
+.userIcon{
+    width:25%;
+    border-radius: 100%;
+    margin-left:3%;
+    margin-top:4%;
+    max-width:80px;
+    min-width:50px;
+    height:min-content;
+}
+
+.floatingHead{
+    display:flex;
+}
+
+.floatingHead > div{
+    margin-left:3%;
+    width:100%; 
+}
+
+.floatingHead h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight:500;
+    margin-bottom: 5px;
+    margin-top: 8%;
+    font-size: 20px;
+}
+
+.floatingHead  p{
+    margin:0;
+    font-size: 16px;
+    color:gray;
+}
+#left hr{
+    margin-left: 2%;
+    margin-right:2%;
+}
+
+#membersLink{
+    font-size: 20px;
+    font-family: 'Roboto';
+    margin: 20px 2%;
+    padding: 0 5%;
+}
+#membersLink:hover{
+    cursor:pointer;
+}
+
+
+
+#membersLink i{
+    color:gray;
+    margin-right:5%;
+}
+
+.chosen{
+    border-left: 5px solid darkblue;
+}
+
+
+#newList{
+    position: fixed;
+    width: 35%;
+    bottom: 10px;
+    border-top: 1px solid gray;
+    height: 8%;
+    min-height: 60px;
+
+}
+
+
+
+#newList:hover{
+    cursor: pointer;
+}
+
+#newList p{
+    margin: 20px 2%;
+    font-size: 20px;
+    font-family: 'Roboto';
+    padding: 0 5%;
+    height:8%;
+    color:#333333;
+    line-height: 8%;
+}
+
+#newList i{
+    margin-right:5%;
+    font-size: 20px;
+}
+
+#membersHeader{
+    font-size: 27px;
+    font-family: 'Roboto';
+    margin: 5% 2%;
+    margin-bottom:2%;
+    padding: 0 5%;
+    color: darkred;
+    font-weight:700;
+}
+
+#membersHeader i{
+
+    margin-right:5%;
+}
+
+#membersPage li{
+    list-style: none;
+}
+
+#membersPage .userIcon{
+    width:15%;
+    border:1px solid dimgray;
+}
+
+#membersPage .floatingHead > div{
+    margin-top:3.7%;
+}
+
+#membersPage .floatingHead h3{
+    font-weight: 700;
+    font-size:20px;
+    margin-top:0;
+}
+
+#membersPage .floatingHead h3:not(:first-of-type){
+    font-weight: 400;
+}
+
+#popListBack{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background-color: black;
+    opacity: 40%;
+}
+
+.displayNone{
+    display:none;
+}
+
+#popList{
+    position: absolute;
+    width:40%;
+    border-radius: 10px;
+    background-color:ghostwhite;
+    height:30%;
+    margin-left:30%;
+    margin-top:15%;
+    opacity: 100%;
+    box-shadow: 12px 10px 4px #333333a2;
+}
+
+#popList div:nth-child(1){
+    width:100%;
+    background-color: lightgray;
+    height:30%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#popList span:nth-of-type(1){
+    display: block;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size:2vw;
+    text-align: center;
+    width:100%;
+    height:100%;
+    line-height: 9vh;
+}
+
+#popList #listInput{
+    width:60%;
+    height:4vh;
+    margin:4vh 20%;
+    padding:0;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size:2.5vh;
+    border: 2px solid black;
+    border-radius:4px;
+}
+
+#popList button{
+    width: 25%;
+    height:3.5vh;
+    background-color: ghostwhite;
+    border-radius: 5px;
+    border:solid 1px gray;
+}
+
+#popList button:hover{
+    cursor: pointer;
+}
+
+#createList{
+    margin-left:35%;
+    margin-right: 5%;
+}
+
+
+.listClass{
+    font-size: 20px;
+    font-family: 'Roboto';
+    margin: 12px 2%;
+    padding: 12px;
+}
+.listClass:hover{
+    cursor:pointer;
+    background-color: lightgray;
+}
+
+
+
+.listClass i{
+    margin-right:5%;
+    color:darkblue;
+}
+
+.listClass .fa-trash {
+    position: absolute;
+    border-radius: 100%;
+    color:gray;
+    left:26%;
+    padding:5px;
+
+}
+
+.listClass .fa-trash:hover {
+    color:black;
+    background-color: gray;
+}
+
+#addTask {
+    width:100%;
+    height:15%;
+    background-color: rgb(171, 111, 250);
+    position:fixed;
+    bottom:0;
+}
+#addTask i{
+    position: relative;
+    right:44%;
+    top:33%;
+    font-size:2.5vh;
+    color:#333333;
+}
+
+#taskInput{
+    width: 45%;
+    position: relative;
+    left:5%;
+    top:33%;
+    height: 33%;
+    border-radius: 10px;
+    border:0;
+    font-family: "Roboto";
+    font-size:2.6vh;
+    color:#333333;
+
+    background-color: white;
+    padding-left:5%;
+}
+
+#tasksDiv li{
+    margin-top: 3%;
+    width:85%;
+    background-color: ghostwhite;
+    height:7vh;
+    border-radius: 6px;
+    list-style: none;
+    font-family: "Roboto";
+    font-size: 18px;
+    color:dimgray;
+    line-height: 7vh;
+    padding-left:5%;
+    cursor: pointer;
+}
+
+#tasksDiv input{
+    position:relative;
+    right:2.5%;
+}
+
+#tasksDiv .chosenTask{
+    text-decoration: line-through;
+}

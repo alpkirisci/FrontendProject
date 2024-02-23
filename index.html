@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery.color.min.js"></script>
+    <script src="lister.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/98c92f59ad.js" crossorigin="anonymous"></script>
+    <title>To-Do List</title>
+</head>
+<body>
+    <!-- left side is almost static so all its tags etc are here -->
+    <div id="left">
+        <div class="floatingHead">
+            <img class="userIcon" src="img/selim.jpg" alt="">
+            <div>
+                <h3>Ahmet Selim Alpkirişçi</h3>
+                <p>selim.alpkirisci@ug.bilkent.edu.tr</p>
+            </div>
+        </div>
+        <div id="membersLink" class="chosen"><i class="fa-regular fa-star"></i><span>Project Members</span></div>
+        <hr>
+        
+
+        <div id="newList"><p><i class="fa-solid fa-plus"></i>New List</p></div>
+    </div>
+
+
+    <div id="main" class="mainMembersChosen">
+        <div id="membersPage">
+            <div id="membersHeader"><i class="fa-regular fa-star"></i><span>Project Members</span></div>
+            <ul>
+                
+            </ul>
+        </div>
+        <!-- <div id="main" class="listChosen">
+        <h3>Tester</h3>
+        <div id="tasksDiv">
+            <ul>
+                <li><input type="checkbox" name="" id="">Task testing</li>
+            </ul>
+        </div>
+        <div id="addTask">
+            <input type="text" id="taskInput"><i class="fa-solid fa-plus"></i>
+        </div> -->
+    
+    </div> <!--dont delete-->
+
+    <div id="popListBack" class="displayNone">
+    </div>
+    <div id="popList" class="displayNone">
+        <div>
+            <span>New Task Name</span>
+        </div>
+        <input type="text" id="listInput">
+        <button id="createList" >Create</button>
+        <button id="cancelList" >Cancel</button>
+
+    </div>
+    
+</body>
+</html>
